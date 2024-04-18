@@ -16,19 +16,19 @@ const BreadCrumb = () => {
         const routeTo = `/${pathnames.slice(0, index + 1).join("/")}`;
 
         return index === pathnames.length - 1 ? (
-          <>
+          <div key={index + 4} className="dflex gap10">
             /
-            <div key={index + 1} className="isComponent">
+            <div key={index + 3} className="isComponent">
               {capatilize(name)}
             </div>
-          </>
+          </div>
         ) : (
-          <>
+          <div key={index + 4} className="dflex gap10">
             /
             <div key={index + 2}>
               <Link to={`${routeTo}`}>{capatilize(name)}</Link>
             </div>
-          </>
+          </div>
         );
       })}
     </div>

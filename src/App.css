@@ -138,3 +138,11 @@ h1 {
   height: 25px;
   fill: red;
 }
+
+.dflex {
+  display: flex;
+}
+
+.gap10 {
+  gap: 10px;
+}
